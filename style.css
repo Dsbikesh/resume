@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #ff7613;
+	--text-color: #727171;
+}
+
+html {
+	font: size 15px;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	background-color: black;
+	color: white;
+
+}
+
+/*common styles */
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.description {
+	margin-top: 1rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+.title {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.item_pretitle {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 300;
+}
+
+.item_title {
+	font-size: 1.6rem;
+	color: white;
+	font-weight: 500;
+	margin: 0.8rem 0;
+}
+
+.itemsubtitle {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 400;
+}
+
+.title {
+	margin-top: 2rem;
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+/*layout*/
+.container {
+	max-width: 1000px;
+	width: 800px;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #070707;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 1.6rem;
+	}
+}
+
+.profile {
+	grid-column: 1 /-1;
+	margin-bottom: 2rem;
+}
+
+.manage {
+	width: 100%;
+}
+
+.Group-3 {
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+/*profile*/
+.profile-container {
+	display: flex;
+	gap: 2rem;
+}
+
+img {
+	border-radius: 50%;
+	width: 40%;
+	margin-left: 32%;
+}
+
+.profile-profileimg {
+	width: 20%;
+	border-radius: 50%;
+
+	max-width: 250px;
+}
+
+.profile_name_firstName {
+	color: white;
+	font-size: 200;
+	font-size: clamp(2rem, 8vw, 4rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 0.8rem;
+}
+
+.profile_name_lastName {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: clamp(2.5rem, 15vm, 7rem);
+	text-transform: uppercase;
+	display: block;
+}
+
+.profile_tittle {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: upper;
+}
+
+@media only screen and (max-width: 768px) {
+	.profile_container {
+		flex-direction: column;
+	}
+}
+
+/*Expertise*/
+.skill_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+/*Soft */
+.soft_item {
+	margin-top: 1rem;
+}
+
+.softskill_list description {
+	font-size: 7.6rem;
+	font-weight: 1400;
+
+}
+
+/*education*/
+.edu_item {
+	margin-top: 2rem;
+}
+
+/* certification*/
+.certification_item {
+	margin-top: 2rem;
+}
+
+/*proj*/
+.proj-item {
+	margin-top: 2rem;
+}
+
+/*Strenth */
+.skill_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+/*Interests*/
+.Interest-items {
+	/* margin-left: 10px; */
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	color: var(--text-color);
+
+}
+
+.Interest-items svg {
+	width: 2rem;
+}
+
+/* socials */
+.contact-list {
+
+	/* margin-left: 10px; */
+	margin-top: 2rem;
+	font-size: 1.1rem;
+	color: var(--text-color);
+}
